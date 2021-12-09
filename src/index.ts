@@ -4,15 +4,17 @@ const apple: Item = {
     id: 'apple',
     displayName: 'Apple',
     price: 60,
+    multiBuy: [2, 1],
 };
 
 const orange: Item = {
     id: 'orange',
     displayName: 'Orange',
     price: 25,
+    multiBuy: [3, 2],
 };
 
-const basket = [apple, apple, orange, apple];
+const basket = [apple, apple, orange, apple, orange, orange];
 const price = calculateCost(basket);
 
 const priceString = price.toString().padStart(3, '0');
