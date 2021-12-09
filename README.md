@@ -22,6 +22,6 @@ The attributes of an `Item` are
 
 Defining items using the `Item` type instead of hard-coding apples and oranges allows easy extension of the code to support other groceries in a basket, and allows for extending each item with additional information as necessary.
 
-Each item in the basket is checked for a negative price. Obviously, you don't want an item with a negative price! If there is an item with a negative price in the basket, an error is thrown with the item's ID and display name.
+Each item in the basket is checked for a negative price and for a negative multibuy offer. Obviously, you don't want an item with a negative price, and you can't purchase -2 apples for the price of 1! If there is an item with a negative price in the basket, an error is thrown with the item's ID and display name.
 
 This code has been unit tested with valid, extreme and invalid test data using `ava`. Run the tests using `yarn test`.
